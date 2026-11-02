@@ -1,0 +1,24 @@
+.medicine-name {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.medicine-section {
+  margin-bottom: 12px;
+}
+
+.medicine-section p {
+  margin: 2px 0 0 0;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+
+.medicine-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.medicine-warning p {
+  color: var(--color-danger);
+}

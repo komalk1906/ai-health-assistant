@@ -1,0 +1,94 @@
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.symptoms-page {
+  max-width: 640px;
+}
+
+.symptom-form {
+  margin-bottom: 4px;
+}
+
+.symptom-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.symptom-input-row .field-input {
+  flex: 1;
+}
+
+.symptom-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.symptoms-loading {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.symptoms-result {
+  margin-top: 20px;
+}
+
+.result-heading {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.severity-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.severity-low {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.severity-moderate {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.severity-high {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+.result-section {
+  margin-bottom: 16px;
+}
+
+.result-section h3 {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.result-section p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.result-disclaimer {
+  font-size: 0.8rem;
+  color: #94A3B8;
+  margin: 12px 0 0 0;
+}

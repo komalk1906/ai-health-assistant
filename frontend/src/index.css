@@ -1,0 +1,115 @@
+/* -------------------------------------------------------------
+   Global styles and design tokens for AI Health Assistant.
+   Every color, spacing, and radius value used across the app
+   is defined here as a CSS variable, so the whole theme can be
+   adjusted from one place.
+------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Color palette */
+  --color-bg: #FAFCFC;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8ED;
+
+  --color-primary: #0F766E;       /* deep teal - primary actions */
+  --color-primary-dark: #0B5A54;
+  --color-primary-light: #E6F4F2;
+
+  --color-secondary: #2E6F9E;     /* clinical blue - secondary accents */
+  --color-secondary-light: #EAF3FA;
+
+  --color-ink: #1E2A32;           /* main text */
+  --color-muted: #64748B;         /* secondary text */
+
+  --color-danger: #B3261E;
+  --color-danger-bg: #FDECEC;
+  --color-warning: #B45309;
+  --color-warning-bg: #FEF3E2;
+  --color-success: #15803D;
+  --color-success-bg: #E9F7EE;
+
+  /* Type */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow-card: 0 1px 2px rgba(16, 24, 32, 0.04), 0 4px 12px rgba(16, 24, 32, 0.05);
+  --sidebar-width: 240px;
+  --max-content-width: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-ink);
+  margin: 0 0 0.5em 0;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+/* Visible keyboard focus everywhere, for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}

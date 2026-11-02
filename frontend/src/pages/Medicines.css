@@ -1,0 +1,15 @@
+.medicines-search {
+  max-width: 360px;
+  margin: 20px 0 24px 0;
+}
+
+.medicines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.medicines-empty {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}

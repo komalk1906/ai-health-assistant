@@ -1,0 +1,17 @@
+# Secrets - never commit your real .env (only .env.example)
+.env
+
+# Local databases
+*.db
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
